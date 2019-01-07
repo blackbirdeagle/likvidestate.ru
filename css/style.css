@@ -1,0 +1,1665 @@
+@font-face {
+    font-family: 'SeroWebProBold';
+    src: url('../fonts/Sero-Web-Pro-Bold.ttf');
+    src: local('SeroWebProBold'),
+    url('../fonts/Sero-Web-Pro-Bold.woff') format('woff'),
+    url('../fonts/Sero-Web-Pro-Bold.ttf') format('truetype'),
+    url('../fonts/Sero-Web-Pro-Bold.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'SeroWebPro';
+    src: url('../fonts/Sero-Web-Pro.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'SeroWebPro';
+    font-size: 14px;
+    color: #000;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+
+}
+
+blockquote{/*
+    font-family: 'NeuronDemiBold';
+    border-left: 5px solid #8fcf1f;
+    line-height: 1.5;
+    font-size: 18px;
+    padding-left: 10px;*/
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.header{
+    padding: 10px 0;
+    background-color: #535353;
+}
+
+.show__menu{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 11px;
+    background-image: url(../images/burger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 45px;
+    margin-top: 7px;
+}
+
+.top__menu{
+    float: left;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.top__menu li{
+    float: left;
+    margin-right: 30px;
+}
+
+.top__menu li:last-child{
+    margin-right: 30px;
+}
+
+.top__menu li a{
+    color: #fff;
+
+}
+
+.social__top{
+    float: right;
+    overflow: hidden;
+    padding-left: 40px;
+    border-lefT: 1px solid #fff;
+    margin-top: 3px;
+}
+
+.social__top li{
+    float: left;
+    margin-right: 24px;
+}
+
+.social__top li:last-child{
+    margin-right: 0;
+}
+
+.top__contacts{
+    padding: 12px 0 21px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo{
+    display: block;
+    width: 300px;
+    height: 87px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.top__contacts__wrap{
+    float: right;
+    overflow: unset;
+    margin-top: 37px;
+}
+
+.ad__order{
+    float: left;
+    padding-left: 43px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1;
+    background-image: url(../images/home.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-decoration: underline;
+    margin-right: 16px;
+    padding-top: 3px;
+}
+
+.ad__order:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.ad__next{
+    float: left;
+    display: block;
+    width: 17px;
+    height: 30px;
+    background-image: url(../images/next.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    padding-right: 35px;
+    border-right: 1px solid #000;
+    margin-right: 32px;
+}
+
+.top__addr{
+    float: left;
+    padding-left: 40px;
+    background-image: url(../images/point.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    line-height: 1.2;
+    padding-right: 31px;
+    border-right: 1px solid #000;
+    height: 31px;
+    margin-right: 43px;
+}
+
+.top__addr a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.top__addr a:hover{
+    text-decoration: none;
+}
+
+
+.top__tel{
+    float: left;
+}
+
+.top__tel a:nth-child(1){
+    font-size: 24px;
+    color: #000;
+
+}
+
+.top__tel a:nth-child(1):hover{
+    text-decoration: underline;
+}
+
+.top__tel a:nth-child(2){
+    display: block;
+    background-color: #eb3323;
+    text-align: center;
+    color: #fff;
+    text-transform: lowercase;
+    padding: 6px 0;
+    border-radius: 14px;
+    width: 150px;
+    margin: 0 auto;
+    transition-duration: 0.5s;
+}
+
+.top__tel a:nth-child(2):hover{
+    color: #fff;
+    background-color: #f35e51;
+    text-decoration: none;
+}
+
+.slogan{
+    padding: 49px 0 0 0;
+}
+
+.slogan h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'SeroWebProBold';
+}
+
+.slogan p{
+    text-align: center;
+    font-size: 30px;
+    color: #5b5b5b;
+}
+
+.slogan a{
+    width: 336px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 0;
+    border: 2px solid #eb3323;
+    border-radius: 30px;
+    color: #000;
+    margin: 24px auto 0 auto;
+}
+
+.slogan a:hover{
+    text-decoration: none;
+}
+
+.markers{
+    padding: 490px 0 43px 0;
+    background-image: url(../images/markers.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    border-bottom: 1px solid #fff;
+}
+
+.markers h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: 'SeroWebProBold';
+    text-align: center;
+}
+
+.markers h2 span{
+    color: #eb3323;
+}
+
+.view__all{
+    display: block;
+    width: 196px;
+    color: #fff;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: #eb3323;
+    padding: 8px 0;
+    border-radius: 16px;
+    transition-duration: 0.5s;
+    margin: 12px auto 12px auto;
+}
+
+.view__all:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #f35e51;
+}
+
+.kv__item{
+    margin-bottom: 60px;
+    display: block;
+}
+
+.kv__item:hover{
+    text-decoration: none;
+}
+
+.kv__item img{
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.kv__item__desc{
+    line-height: 1.5;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    color: #282828;
+}
+
+.kv__item__price__wrap{
+    background-image: url(../images/next.png);
+    background-repeat: no-repeat;
+    background-position: right 52px;
+}
+
+.kv__item__price{
+    font-size: 24px;
+    font-family: 'SeroWebProBold';
+    color: #282828;
+    padding: 15px 0;
+    border-bottom: 2px solid #bcbcbc;
+}
+
+.kv__item__goto{
+    font-size: 12px;
+    margin-top: 14px;
+    color: #000;
+}
+
+#slider__kv{
+    margin-top: 56px;
+}
+
+#slider__kv .owl-stage-outer{
+    overflow: unset;
+}
+
+#slider__kv .owl-nav{
+    position: absolute;
+    left: 50%;
+    width: 195px;
+    margin-left: -87px;
+    margin-top: 30px;
+}
+
+#slider__kv .owl-nav .owl-prev{
+    float: left;
+}
+
+#slider__kv .owl-nav .owl-next{
+    float: right;
+}
+
+.step5{
+    padding: 59px 0;
+    background-image: url(../images/room.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: 60px;
+    background-size: cover;
+}
+
+.step5 h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 36px;
+    font-family: 'SeroWebProBold';
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pagin__slider{
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.pagin__slider li{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    float: left;
+    padding: 4px;
+    margin-left: 139px;
+}
+
+.pagin__slider li:first-child{
+    margin-left: 0;
+}
+
+.pagin__slider li a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 36px;
+    color: #fff;
+    font-family: 'SeroWebProBold';
+    text-align: center;
+    padding-top: 9px;
+}
+
+.pagin__slider li a.active{
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.pagin__slider li a:hover{
+    text-decoration: none;
+}
+
+.step__head{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+
+}
+
+.step__head span{
+    font-size: 36px;
+    font-family: 'SeroWebProBold';
+}
+
+#step__slider{
+    margin-top: 51px;
+    padding: 0 180px;
+}
+
+.step__text{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.rieltor{
+    display: block;
+    width: 335px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 13px 0;
+    color: #000;
+    border-radius: 24px;
+    margin: 59px auto 0 auto;
+}
+
+.rieltor:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.step5__wrap{
+    background-image: url(../images/hor_line.jpg);
+    background-repeat: repeat-x;
+    background-position: left 144px;
+}
+
+.rieltors{
+    padding: 36px 0 43px 0;
+    background-image: url(../images/hor_line2.jpg);
+    background-repeat: repeat-x;
+    background-position: left 313px;
+}
+
+.rieltors h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: 'SeroWebProBold';
+}
+
+.rieltors__subtext{
+    text-align: center;
+    font-size: 24px;
+    color: #777777;
+}
+
+.rieltor__item img{
+    width: 295px !important;
+    height: 295px;
+    border: 13px solid #fff;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#slider__rieltor{
+    margin-top: 39px;
+}
+
+.rieltor__name{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'SeroWebProBold';
+    margin-top: 21px;
+}
+
+.rieltor__post{
+    text-align: center;
+    font-size: 24px;
+}
+
+.view__object{
+    display: block;
+    width: 196px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px 0;
+    background-color: #eb3323;
+    border-radius: 17px;
+    margin: 18px auto 0 auto;
+    transition-duration: 0.5s;
+}
+
+.view__object:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #f35e51;
+}
+
+.rieltor__stag{
+    text-align: center;
+    font-size: 24px;
+}
+
+#slider__rieltor .owl-nav{
+    width: 506px;
+    overflow: hidden;
+    position: absolute;
+    lefT: 50%;
+    margin-left: -253px;
+    top: 50%;
+    margin-top: -27px;
+}
+
+#slider__rieltor .owl-nav .owl-prev{
+    float: left;
+}
+
+#slider__rieltor .owl-nav .owl-next{
+    float: right;
+}
+
+.rieltor__contacts{
+    margin-top: 22px;
+    padding: 26px 0;
+    border-top: 2px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.rieltor__tel{
+    display: block;
+    font-size: 24px;
+    color: #000;
+    font-family: 'SeroWebProBold';
+    text-align: center;
+}
+
+.rieltor__tel:hover{
+    color: #000;
+}
+
+.rieltor__email{
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    color: #000;
+}
+
+.rieltor__email:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+#slider__rielt__cont{
+    padding: 0 200px;
+}
+
+.new__catalog{
+    background-color: #ccd5c9;
+    padding-bottom: 114px;
+}
+
+.new__ico{
+    display: block;
+    width: 96px;
+    height: 96px;
+    background-image: url(../images/new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -16px auto 37px auto;
+}
+
+.new__catalog h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'SeroWebProBold';
+}
+
+#slider__new{
+    margin-top: 24px;
+}
+
+#slider__new .owl-stage-outer{
+    overflow: unset;
+}
+
+#slider__new .owl-nav {
+    position: absolute;
+    left: 50%;
+    width: 195px;
+    margin-left: -87px;
+    margin-top: 30px;
+}
+
+#slider__new .owl-nav .owl-prev {
+    float: left;
+}
+
+#slider__new .owl-nav .owl-next {
+    float: right;
+}
+
+.advantages{
+    padding: 51px 0;
+    background-image: url(../images/adv_bg.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.advantages h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: 'SeroWebProBold';
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.adv__item{
+    margin-bottom: 58px;
+}
+
+.adv__item__name{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'SeroWebProBold';
+}
+
+.adv__item__text{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.order__consult{
+    display: block;
+    width: 335px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 13px 0;
+    color: #000;
+    border-radius: 24px;
+    margin: 0 auto 0 auto;
+}
+
+.order__consult:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.aukcion__ico{
+    width: 96px;
+    height: 96px;
+    margin: -16px auto 0 auto;
+    background-image: url(../images/akcii.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aukcion__order{
+    background-color: #f6f6f6;
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+
+.aukcion__order h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: 'SeroWebProBold';
+    margin-top: 36px;
+}
+
+#slider__akcii{
+    margin-top: 24px;
+}
+
+#slider__akcii .owl-stage-outer{
+    overflow: unset;
+}
+
+#slider__akcii .owl-nav {
+    position: absolute;
+    left: 50%;
+    width: 195px;
+    margin-left: -87px;
+    margin-top: 30px;
+}
+
+#slider__akcii .owl-nav .owl-prev {
+    float: left;
+}
+
+#slider__akcii .owl-nav .owl-next {
+    float: right;
+}
+
+#step__slider1{
+    margin-top: 51px;
+}
+
+.friends{
+    padding: 56px 0;
+}
+
+.friends__img{
+    width: 520px;
+    float: left;
+    z-index: 10;
+    position: relative;
+}
+
+.friends__img img{
+    width: 100%;
+}
+
+.friends__content{
+    float: right;
+    padding: 46px 66px 46px 300px;
+    background-color: #f6f6f6;
+    width: 900px;
+    margin-top: -450px;
+}
+
+.friends__content h3{
+    font-family: 'SeroWebProBold';
+    font-size: 36px;
+}
+
+.friends__content p{
+    font-size: 16px;
+    color: #777777;
+}
+
+.direktor{
+    overflow: hidden;
+    margin-top: 90px;
+}
+
+.direktor__name{
+    float: left;
+    font-size: 16px;
+    color: #000 !important;
+}
+
+.direktor__name span{
+    font-family: 'SeroWebProBold';
+}
+
+.feed__direktor{
+    display: block;
+    float: right;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    width: 208px;
+    padding: 10px 0;
+    border: 1px solid #b5b5b5;
+    border-radius: 20px;
+}
+
+.feed__direktor:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.services{
+    padding: 53px 0;
+    background-image: url(../images/services.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.services h2{
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-family: 'SeroWebProBold';
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services__item p{
+    color: #fff;
+}
+
+.services__item__headwrap{
+    min-height: 111px;
+}
+
+.services__item__head{
+    font-size: 24px;
+    font-family: 'SeroWebProBold';
+    line-height: 1;
+}
+
+.services__item__subhead{
+    font-size: 18px;
+}
+
+.services__item__text{
+    font-size: 16px;
+}
+
+.order__quest{
+    display: block;
+    width: 335px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 13px 0;
+    color: #000;
+    border-radius: 24px;
+    margin: 59px auto 0 auto;
+}
+
+.order__quest:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.partners{
+    padding: 75px 0;
+}
+
+.partners h2{
+    text-transform: uppercase;
+    font-family: 'SeroWebProBold';
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 39px;
+}
+
+#partners__slider .owl-nav {
+    position: absolute;
+    left: 50%;
+    width: 195px;
+    margin-left: -87px;
+    margin-top: 30px;
+
+}
+
+#partners__slider .owl-nav .owl-prev {
+    float: left;
+}
+
+#partners__slider .owl-nav .owl-next {
+    float: right;
+}
+
+.view__all__partners{
+    margin-top: 120px;
+}
+
+#slider__newstroy{
+    margin-top: 22px;
+}
+
+#slider__newstroy .owl-stage-outer{
+    overflow: unset;
+}
+
+#slider__newstroy .owl-nav{
+    position: absolute;
+    left: 50%;
+    width: 195px;
+    margin-left: -87px;
+    margin-top: 30px;
+
+}
+
+#slider__newstroy .owl-nav .owl-prev {
+    float: left;
+}
+
+#slider__newstroy .owl-nav .owl-next {
+    float: right;
+}
+
+.faq{
+    padding: 62px 0 25px 0;
+}
+
+.faq__wrap{
+    text-align: center;
+}
+
+.faq__wrap h2{
+    text-transform: uppercase;
+    font-family: 'SeroWebProBold';
+    font-size: 36px;
+}
+
+.faq__wrap p{
+    font-size: 24px;
+    color: #777777;
+}
+
+.faq__list__item{
+    padding: 20px 0;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.faq__list__item:first-child{
+    border-top: 1px solid #c2c2c2;
+}
+
+.faq__list{
+    margin-top: 24px;
+    padding: 0 285px;
+}
+
+.faq__list__item{
+    text-align: center;
+}
+
+.faq__list__item a{
+    font-size: 16px;
+    color: #000;
+    background-image: url(../images/trg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 16px;
+}
+
+.faq__list__item p{
+    margin-top: 20px;
+    display: none;
+}
+
+.order__faq{
+    display: block;
+    width: 196px;
+    color: #fff;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: #eb3323;
+    padding: 8px 0;
+    border-radius: 16px;
+    transition-duration: 0.5s;
+    margin: 30px auto 12px auto;
+}
+
+.order__faq:hover{
+    color: #fff;
+    background-color: #f35e51;
+    text-decoration: none;
+}
+
+.footer{
+    padding: 36px 0;
+    background-color: #535353;
+    border-bottom: 1px solid #696969;
+}
+
+.bottom__menu__head{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.bottom__menu li{
+    margin-bottom: 8px;
+}
+
+.bottom__menu li:last-child{
+    margin-bottom: 0;
+}
+
+.bottom__menu li a{
+    color: #fff;
+}
+
+.bottom__addr{
+    color: #fff;
+}
+
+.bottom__addr a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom__addr a:hover{
+    text-decoration: underline;
+}
+
+.bottom__mesendger{
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.bottom__mesendger li{
+    float: left;
+    margin-right: 24px;
+}
+
+.bottom__mesendger li:last-child{
+    margin-right: 0;
+}
+
+.map img{
+    width: 100%;
+}
+
+.copyright{
+    padding: 30px 0;
+    background-color: #535353;
+}
+
+p.copy{
+    color: #fff;
+}
+
+a.develop{
+    color: #fff;
+}
+
+.bottom__social{
+    overflow: hidden;
+    float: right;
+}
+
+.bottom__social li{
+    float: left;
+    margin-right: 24px;
+}
+
+.bottom__social li:last-child{
+    margin-right: 0;
+}
+
+.float__menu{
+    position: fixed;
+    top: 0;
+    left: -290px;
+    z-index: 16;
+    background-color: #fff;
+    height: 100%;
+    padding: 40px 20px;
+    width: 290px;
+    overflow-y: auto;
+}
+
+.hide__menu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 18px;
+    color: #000;
+}
+
+.float__menu ul li {
+    margin-bottom: 10px;
+}
+
+.float__menu ul li a {
+    font-size: 16px;
+    text-align: left !important;
+    color: #000;
+}
+
+/*-------------ПОПАП---------------*/
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    max-width: 485px;
+    top: 100px;
+    left: 100px;
+    background-color: #fff;
+    z-index: 999;
+    position: absolute;
+    padding: 38px;
+    border-radius: 4px;
+    border: 2px solid #de3227;
+}
+
+.close1 {
+    float: right;
+    font-size: 21px;
+    color: #de3227;
+    right: 28px;
+    top: 16px;
+    position: absolute;
+}
+
+.close1:hover{
+    text-decoration: none;
+    color: #de3227;
+}
+
+.popup .head{
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.popup input{
+    width: 100%;
+    height: 44px;
+    border: 1px solid #e9e9ea;
+    border-radius: 4px;
+    color: #807e7e;
+    font-size: 16px;
+    padding: 0 23px 0 23px;
+    margin-bottom: 18px;
+}
+
+.popup input[type="submit"]{
+    cursor: pointer;
+    background-color: #de3227;
+    color: #fff;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+.popup input[type="submit"]:hover{
+    background-color: #de5a52;
+}
+
+.popup textarea{
+    width: 100%;
+    resize: none;
+    height: 150px;
+    color: #807e7e;
+    margin-bottom: 18px;
+    font-size: 16px;
+    border: 1px solid #e9e9ea;
+    padding: 23px;
+}
+
+.send__call, .send__call__consult, .send__quest__rielt, .send__quest, .send__quest__direktor{
+    cursor: pointer;
+    background-color: #de3227;
+    color: #fff;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 44px;
+    border: 1px solid #e9e9ea;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 11px 23px 0 23px;
+    margin-bottom: 18px;
+}
+
+.send__call:hover, .send__quest__rielt:hover, .send__call__consult:hover, .send__quest:hover, .send__quest__direktor:hover{
+    background-color: #de5a52;
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner{
+    padding: 40px 0;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h1{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+}
+
+.banner h1 span{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'SeroWebProBold';
+}
+
+.sort{
+    padding: 23px 0;
+    border-bottom: 1px solid #000;
+}
+
+.sort__left{
+    overflow: hidden;
+}
+
+.view__table{
+    display: block;
+    float: left;
+    background-image: url(../images/table.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #000;
+    padding-left: 33px;
+    margin-right: 30px;
+}
+
+.view__table:hover{
+    color: #000;
+}
+
+.view__table.active{
+    color: #73b160;
+    text-decoration: underline;
+}
+
+.view__map{
+    display: block;
+    float: left;
+    background-image: url(../images/point1.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #000;
+    margin-right: 30px;
+    padding: 1px 0 1px 26px;
+}
+
+.view__map:hover{
+    color: #000;
+}
+
+.view__map.active{
+    color: #73b160;
+    text-decoration: underline;
+}
+
+.view__pagin{
+    float: left;
+}
+
+.view__pagin p a{
+    color: #73b160;
+    text-decoration: underline;
+    padding: 0 5px;
+}
+
+.view__pagin p a.active{
+    text-decoration: none;
+    color: #282828;
+}
+
+.sort__right{
+    overflow: hidden;
+}
+
+.sort__order{
+    float: right;
+}
+
+.sort__order a{
+    color: #282828;
+}
+
+.sort__order a.active{
+    color: #73b160;
+    text-decoration: underline;
+}
+
+.sort__order a:nth-child(1){
+    padding-right: 9px;
+    border-right: 1px solid #282828;
+}
+
+.sort__order a:nth-child(2){
+    padding-left: 8px;
+}
+
+.sort__level{
+    overflow: hidden;
+    float: right;
+    margin-right: 30px;
+}
+
+.sort__level a{
+    background-image: url(../images/uncheck.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 19px;
+    color: #000;
+    margin-left: 7px;
+}
+
+.sort__level a.active{
+    background-image: url(../images/check.png);
+}
+
+.catalog{
+    padding: 29px 0;
+}
+
+/*---------------Форма добавления объявления---------------*/
+.add__form {
+    padding: 51px 0;
+}
+
+.column__head{
+    font-size: 24px;
+    font-family: 'SeroWebProBold';
+    color: #282828;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #eb3323;
+    margin-bottom: 12px;
+}
+
+.field{
+    margin-bottom: 7px;
+}
+
+.field input[type = "text"]{
+    width: 100%;
+    height: 28px;
+    border: 1px solid #535353;
+}
+
+.field textarea{
+    width: 100%;
+    border: 1px solid #535353;
+    resize: none;
+    height: 130px;
+}
+
+.field select{
+    width: 100%;
+    height: 28px;
+    border: 1px solid #535353;
+}
+
+.field label{
+    font-size: 16px;
+}
+
+.field label span{
+    color: red;
+}
+/*---------------------------------------------------------*/
+
+@media(max-width: 1199px){
+    .faq__list{
+        margin-top: 24px;
+        padding: 0;
+    }
+
+    .social__top{
+        float: none;
+        border-left: none;
+        padding-left: 0;
+        width: 233px;
+        margin: 40px auto 0 auto;
+        clear: both;
+    }
+
+    .top__menu{
+        float: right;
+    }
+
+    .show__menu{
+        margin-right: 0;
+    }
+
+    .markers{
+        background-size: auto;
+        padding: 477px 0 43px 0;
+    }
+
+    #slider__kv .owl-stage-outer, #slider__new .owl-stage-outer, #slider__akcii .owl-stage-outer, #slider__newstroy .owl-stage-outer{
+        overflow: hidden;
+    }
+
+    .friends__img{
+        float: none;
+        margin: 0 auto;
+    }
+
+    .friends__content{
+        float: none;
+        margin-top: 0;
+        width: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media(max-width: 1100px){
+    .logo{
+        margin: 0 auto;
+        float: none;
+    }
+
+    .top__contacts__wrap{
+        width: 754px;
+        float: none;
+        margin: 39px auto 0 auto;
+    }
+}
+
+@media(max-width: 991px){
+    .pagin__slider{
+        width: auto;
+    }
+
+    .step5__wrap{
+        background: none;
+    }
+
+    #slider__rielt__cont{
+        padding: 0;
+    }
+
+    .rieltors{
+        background: none;
+    }
+
+    .pagin__slider li{
+        margin-left: 130px;
+    }
+}
+
+@media(max-width: 930px){
+    .top__menu{
+        display: none;
+    }
+
+    .social__top{
+        float: right;
+        margin: -17px auto 0 auto;
+        width: 200px;
+    }
+}
+
+@media(max-width: 800px){
+    .top__contacts__wrap{
+        width: auto;
+    }
+
+    .top__tel{
+        float: none;
+        clear: both;
+        margin-top: 40px;
+    }
+
+    .top__tel a:nth-child(1){
+        display: block;
+        text-align: center;
+    }
+
+    .top__addr{
+        float: none;
+        border-right: none;
+        margin-right: 0;
+        margin-left: 274px;
+    }
+}
+
+@media(max-width: 767px){
+    .pagin__slider li{
+        margin-left: 40px;
+    }
+
+    #step__slider{
+        padding: 0;
+    }
+
+    .map{
+        margin-top: 20px;
+    }
+
+    .bottom__social{
+        float: none;
+        margin-top: 10px;
+    }
+
+    .bottom__menu{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 576px){
+    #slider__rieltor .owl-nav{
+        width: 240px;
+        position: static;
+        margin: 0 auto;
+    }
+
+    .ad__order{
+        float: none;
+        padding: 12px 0 0 43px;
+        display: block;
+        width: 210px;
+        margin: 0 auto;
+    }
+
+    .ad__next{
+        display: none;
+    }
+
+    .top__addr{
+        margin-right: auto;
+        margin-left: auto;
+        height: 50px;
+        margin-top: 20px;
+        width: 220px;
+
+    }
+
+    .friends__img{
+        width: auto;
+    }
+
+    .bottom__menu__head{
+        text-align: center;
+    }
+
+    .bottom__menu li a{
+        display: block;
+        text-align: center;
+    }
+
+    .bottom__addr{
+        text-align: center;
+    }
+
+    .bottom__mesendger{
+        width: 120px;
+        margin: 20px auto 0 auto;
+    }
+
+    p.copy{
+        text-align: center;
+    }
+
+    a.develop{
+        display: block;
+        text-align: center;
+    }
+
+    .bottom__social{
+        width: 75px;
+        margin: 20px auto 0 auto;
+    }
+
+
+}
+
+@media(max-width: 520px){
+    .friends__content p{
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .feed__direktor{
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 360px){
+    .logo{
+        width: auto;
+        background-size: contain;
+    }
+
+    .slogan h1{
+        font-size: 27px;
+    }
+
+    .slogan a{
+        width: 275px;
+    }
+
+    .pagin__slider li{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .pagin__slider li a{
+        width: 50px;
+        height: 50px;
+        padding-top: 0;
+    }
+
+    .rieltor, .order__quest, .order__consult{
+        width: 100%;
+    }
+}

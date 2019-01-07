@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.theme.default.css">
+
+    <title>Каталог</title>
+
+</head>
+<body>
+
+<div class = "overlay"></div>
+
+<div class="popup usagr-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Заказ обратного звонка</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <a class = "send__call" href = "javascript:void(0);">Отправить</a>
+    </form>
+</div>
+
+<div class="popup consult-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Запись на консультацию</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <a class = "send__call__consult" href = "javascript:void(0);">Записаться</a>
+    </form>
+</div>
+
+<div class="popup rieltor-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Задать вопрос риелтору</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <input type = "text" name = "email" placeholder = "E-mail"/>
+        <textarea name = "quest" placeholder = "Ваш вопрос*"></textarea>
+        <a class = "send__quest__rielt" href = "javascript:void(0);">Спросить</a>
+    </form>
+</div>
+
+<div class="popup quest-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Задать вопрос</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <input type = "text" name = "email" placeholder = "E-mail"/>
+        <textarea name = "quest" placeholder = "Ваш вопрос*"></textarea>
+        <a class = "send__quest" href = "javascript:void(0);">Спросить</a>
+    </form>
+</div>
+
+<div class="popup direktor-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Письмо директору</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <input type = "text" name = "email" placeholder = "E-mail"/>
+        <textarea name = "quest" placeholder = "Ваш вопрос*"></textarea>
+        <a class = "send__quest__direktor" href = "javascript:void(0);">Отправить</a>
+    </form>
+</div>
+
+<div class = "float__menu">
+    <a class="hide__menu" href="javascript:void(0);">X</a>
+    <ul>
+        <li><a href = "">Каталог квартир</a></li>
+        <li><a href = "">Аукционные предложения</a></li>
+        <li><a href = "">Наши риелторы</a></li>
+        <li><a href = "">Преимущества</a></li>
+        <li><a href = "">Услуги</a></li>
+        <li><a href = "">FAQ</a></li>
+        <li><a href = "">Контакты</a></li>
+        <li><a href = "">Новинки каталога</a></li>
+        <li><a href = "">Генеральный директор</a></li>
+        <li><a href = "">Пользовательское соглашение</a></li>
+        <li><a href = "">Политика конфиденциальности</a></li>
+    </ul>
+</div>
+
+<header class = "header">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-12">
+                <a class = "show__menu" href = "javascript:void(0);"></a>
+                <ul class = "top__menu">
+                    <li><a href = "">Каталог квартир</a></li>
+                    <li><a href = "">Аукционные предложения</a></li>
+                    <li><a href = "">Наши риелторы</a></li>
+                    <li><a href = "">Преимущества</a></li>
+                    <li><a href = "">Услуги</a></li>
+                    <li><a href = "">FAQ</a></li>
+                    <li><a href = "">Контакты</a></li>
+                </ul>
+                <ul class = "social__top">
+                    <li><a target = "_blank" href = ""><img src = "images/inst.png" /></a></li>
+                    <li><a target = "_blank" href = ""><img src = "images/fb.png" /></a></li>
+                    <li><a target = "_blank" href = ""><img src = "images/telegram.png" /></a></li>
+                    <li><a target = "_blank" href = ""><img src = "images/wc.png" /></a></li>
+                    <li><a target = "_blank" href = ""><img src = "images/viber.png" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class = "top__contacts">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-12">
+                <a class = "logo" href = "/"></a>
+                <div class = "top__contacts__wrap">
+                    <a class = "ad__order" href = "">Подать объявление<br/>о продаже квартиры</a>
+                    <a class = "ad__next"></a>
+                    <p class = "top__addr">Москва, Вавилова 81 к.1<br/>
+                        ПН-ВС, 10:00-22:00<br/><a href = "">Карта проезда</a></p>
+                    <div class = "top__tel">
+                        <a href = "tel:+74956478494">+7 495 647-84-94</a>
+                        <a href = "javascript:void(0);" popup-target = "usagr-pp">заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "banner">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-12">
+                <h1><span>Найдите квартиру</span><br/>от надежных риелторов</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "sort">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-6 col-lg-6 col-md-6">
+                <div class = "sort__left">
+                    <a class = "view__table active" href = "">показать таблицей</a>
+                    <a class = "view__map" href = "">показать на карте</a>
+                    <div class = "view__pagin">
+                        <p>Показать по: <a class = "active" href = "">12</a> <a href = "">40</a> <a href = "">Все</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-xl-6 col-lg-6 col-md-6">
+                <div class = "sort__right">
+                    <div class = "sort__order">
+                        <a href = "">по возрастанию цены</a>
+                        <a class = "active" href = "">по убыванию цены</a>
+                    </div>
+                    <div class = "sort__level">
+                        <p>Этаж: <a class = "active" href = "">не первый</a> <a href = "">не последний</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "catalog">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k1.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k2.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k3.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k4.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k5.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k6.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k1.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k2.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k3.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k4.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k5.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-2">
+                <a href = "" class = "kv__item">
+                    <img src = "images/k6.png" />
+                    <p class = "kv__item__desc">1-комнатная квартира 22 кв. м, Москва, Малая Тульская улица, дом 2/1</p>
+                    <div class = "kv__item__price__wrap">
+                        <p class = "kv__item__price">5 227 006 &#8381;</p>
+                        <p class = "kv__item__goto">перейти к объекту</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class = "footer">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                <p class = "bottom__menu__head">Покупателю</p>
+                <ul class = "bottom__menu">
+                    <li><a href = "">Каталог квартир</a></li>
+                    <li><a href = "">Новинки каталога</a></li>
+                    <li><a href = "">Аукционные предложения</a></li>
+                    <li><a href = "">Преимущества</a></li>
+                    <li><a href = "">Услуги</a></li>
+                </ul>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                <p class = "bottom__menu__head">Компания</p>
+                <ul class = "bottom__menu">
+                    <li><a href = "">Наши риелторы</a></li>
+                    <li><a href = "">Генеральный директор</a></li>
+                    <li><a href = "">Контакты</a></li>
+                    <li><a href = "">Пользовательское соглашение</a></li>
+                    <li><a href = "">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class = "col-xl-2 col-lg-2 col-md-2 col-sm-6">
+                <p class = "bottom__menu__head">Контакты</p>
+                <p class = "bottom__addr">Москва, Вавилова 81 к.1<br/>
+                    ПН-ВС 10:00 - 22:00<br/>
+                    <a href = "tel:+74956478494">+7 (495) 647-84-94</a><br/>
+                    <a href = "mailto:info@likvidest.ru">info@likvidest.ru</a></p>
+                <ul class = "bottom__mesendger">
+                    <li><a href = ""><img src = "images/telegram.png" /></a></li>
+                    <li><a href = ""><img src = "images/wc.png" /></a></li>
+                    <li><a href = ""><img src = "images/viber.png" /></a></li>
+                </ul>
+            </div>
+            <div class = "col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                <div class = "map"><img src = "images/map.png" /></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<section class = "copyright">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                <p class = "copy">Copyright Ликвид недвижимость, 2018</p>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                <a class = "develop" href = "">Разработка сайта Colortime</a>
+            </div>
+            <div class = "col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <ul class = "bottom__social">
+                    <li><a href = ""><img src = "images/inst.png" /></a></li>
+                    <li><a href = ""><img src = "images/fb.png" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type = "text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type = "text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+<script type = "text/javascript" src="js/maskedinput.js"></script>
+<script type = "text/javascript" src="js/script.js"></script>
+</body>
+</html>
